@@ -15,7 +15,7 @@ GNU/Linux.
 
 This script wasn't intended to win any design awards, it was created to ease 
 the diagnosis of a particular DNS problem I was experiencing, the details of 
-which can be found here: [Cross-Platform Usage of Nslookup](https://www.thecliguy.co.uk/2019/06/02/?????????????????????????????). It would have been overkill to write a series of encapsulated general purpose 
+which can be found here: [Cross-Platform Usage of Nslookup](https://www.thecliguy.co.uk/2019/06/02/?????????????????????????????). It would have been overkill to write a series of general purpose 
 DNS functions, so I went for a single monolithic function to achieve a single 
 objective. It gets the job done.
 
