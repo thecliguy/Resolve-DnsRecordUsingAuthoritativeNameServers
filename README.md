@@ -19,8 +19,8 @@ which can be found here: [Cross-Platform Usage of Nslookup](https://www.thecligu
 DNS functions, so I went for a single monolithic function to achieve a single 
 objective. It gets the job done.
 
-EXAMPLE
--------
+EXAMPLE USAGE
+-------------
 ```PowerShell
 . .\Resolve-DnsRecordUsingAuthoritativeNameServers.ps1
 
