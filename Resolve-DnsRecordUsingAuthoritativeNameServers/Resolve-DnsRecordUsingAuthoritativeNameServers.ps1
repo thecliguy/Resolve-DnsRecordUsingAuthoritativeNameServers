@@ -8,6 +8,12 @@
 ################################################################################
 # Development Log:
 #
+# 0.1.1 - 2019-06-12 (AR)
+#   * The query to obtain a domain's authoritative name servers was being
+#     performed against the primary name server even when the switch
+#     'UsePrimaryNameServerToObtainAuthoritativeNameServers' was set to $False.
+#     This has been rectified.
+#
 # 0.1.0 - 2019-06-02 (AR)
 #   * First release.
 #
@@ -98,7 +104,7 @@ Function Resolve-DnsRecordUsingAuthoritativeNameServers {
         $qryNameServersResult = ($null = nslookup -querytype=ns $Domain $PrimaryNameServer 2>&1)
     }
     Else {
-        $qryNameServersResult = ($null = nslookup -querytype=ns $Domain $PrimaryNameServer 2>&1)
+        $qryNameServersResult = ($null = nslookup -querytype=ns $Domain 2>&1)
     }
     
     # Extract authoritative name server(s) from the output.
