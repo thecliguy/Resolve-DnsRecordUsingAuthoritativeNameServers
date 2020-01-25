@@ -1,7 +1,4 @@
-# PowerShell-Scripts
-My PowerShell scripts
-
-## Resolve-DnsRecordUsingAuthoritativeNameServers
+# Resolve-DnsRecordUsingAuthoritativeNameServers
 
 DESCRIPTION
 -----------
